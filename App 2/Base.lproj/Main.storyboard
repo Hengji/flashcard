@@ -48,6 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctY-by-ua9">
                                         <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                         <state key="normal" title="final answer"/>
+                                        <connections>
+                                            <action selector="nextPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFQ-hq-i0B"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -60,6 +63,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mdc-8x-aPl" secondAttribute="bottom" id="jmF-Fr-obW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextPlayer" destination="ctY-by-ua9" id="1ml-pQ-aTm"/>
+                        <outlet property="pickerview" destination="uul-Op-BnV" id="eAi-rl-WUx"/>
+                        <outlet property="questiontextview" destination="Cbd-T4-het" id="kyT-gf-5f0"/>
+                        <outlet property="qustion" destination="02f-SZ-8nD" id="XkH-G8-hrO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
